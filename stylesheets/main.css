@@ -55,7 +55,7 @@ body {
 /*}*/
 
 .topics2 {
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     margin: 15px 0 30px;
@@ -136,7 +136,7 @@ body {
 
 
 .advantages_each img {
-    max-width: 40%;
+    max-width: 30%;
     margin: 6% 0 4%;
 }
 /*co nas wyróżnia koniec*/
@@ -196,6 +196,7 @@ body {
 /*PRELEGENCI*/
 #prelegenci {
     margin: 6% 0;
+    background-color: rgba(237, 20, 91, 0.1);
 }
 
 .prelegenci_opis {
