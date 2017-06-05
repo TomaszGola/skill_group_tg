@@ -196,9 +196,14 @@ body {
 /*PRELEGENCI*/
 #prelegenci {
     margin: 6% 0;
-    background-color: rgba(237, 20, 91, 0.1);
+    /*background-color: rgba(237, 20, 91, 0.1);*/
 }
-
+.prelegenci_opis_div {
+    border: 1px solid crimson;
+    width: 28%;
+    margin: 2%;
+    padding-top: 2%;
+}
 .prelegenci_opis {
     padding: 25px 35px 15px 25px;
     text-align: justify;
