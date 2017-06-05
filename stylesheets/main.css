@@ -30,11 +30,11 @@ body {
 
 /* spany - nagłówki sekcji, co nas wyróżnia i inne */
 .topics_div {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .topics {
-    font-size: 30px;
+    font-size: 23px;
     text-transform: uppercase;
     font-weight: 700;
     border-top: 5px solid crimson;
@@ -55,7 +55,7 @@ body {
 /*}*/
 
 .topics2 {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     margin: 15px 0 30px;
@@ -70,7 +70,7 @@ body {
     background: #ed145b;
 }
 .topics3 {
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     margin: 15px 0 30px;
@@ -132,8 +132,8 @@ body {
 }
 .advantages_each {
     position: relative;
+    display: none;
 }
-
 
 .advantages_each img {
     max-width: 30%;
@@ -145,8 +145,17 @@ body {
 #org_partners {
     margin: 6% 0;
 }
+.organizator_row {
+    margin-bottom: 50px;
+}
+#skill_logo {
+    width: 70%;
+}
+#fakty_logo {
+    width: 50%;
+}
 
-/*czego się dowiesz*/
+    /*czego się dowiesz*/
 #get_know {
     margin: 6% 0;
 }
@@ -173,10 +182,15 @@ body {
     max-height: 80px;
     border-radius: 10px;
 }
+/*.program_photo:hover {*/
+    /*position: absolute;*/
+    /*max-height: 120px;*/
+/*}*/
 .program_title {
     padding: 1%;
     padding-left: 3%;
     border-left: 3px solid crimson;
+    font-size: 18px;
     /*border-right: 2px solid crimson;*/
     /*border-radius: 20px;*/
 }
@@ -224,7 +238,15 @@ body {
     text-align: center;
     margin: 15px 0 6px;
 }
-
+.prelegenci_opis_div {
+    position: relative;
+    top: 200px;
+}
+.in-view2 {
+    position: relative;
+    top: 0;
+    transition: 1.8s ease;
+}
 
 @media screen and (max-width: 650px) {
     .intro {

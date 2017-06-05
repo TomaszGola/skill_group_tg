@@ -14,7 +14,7 @@ $(".zwin").click(function(){
 
 /* pojawianie się opisów prelegentów na scroll */
 $(document).ready(function () {
-    var $contactElements = $('.contact-element');
+    var $contactElements = $('.prelegenci_opis_div');
     var $windowContact = $(window);
     $windowContact.on('scroll', check_if_in_view2);
 
@@ -33,6 +33,33 @@ $(document).ready(function () {
             if ((elementCBottomPosition >= windowContactTopPosition) &&
                 (elementCTopPosition <= windowContactBottomPosition)) {
                 $elementC.addClass('in-view2');
+            } else {
+                // $elementC.removeClass('in-view2');
+            }
+        });
+    }
+});
+
+$(document).ready(function () {
+    var $contactElements = $('.advantages_each');
+    var $windowContact = $(window);
+    $windowContact.on('scroll', check_if_in_view);
+
+    function check_if_in_view() {
+        var windowContactHeight = $windowContact.height();
+        var windowContactTopPosition = $windowContact.scrollTop();
+        var windowContactBottomPosition = (windowContactTopPosition + windowContactHeight);
+
+        $.each($contactElements, function () {
+            var $elementC = $(this);
+            var elementCHeight = $elementC.outerHeight();
+            var elementCTopPosition = $elementC.offset().top;
+            var elementCBottomPosition = (elementCTopPosition + elementCHeight);
+
+//check to see if this current container is within viewport*/
+            if ((elementCBottomPosition >= windowContactTopPosition) &&
+                (elementCTopPosition <= windowContactBottomPosition)) {
+                $elementC.fadeIn(1000);
             } else {
                 // $elementC.removeClass('in-view2');
             }
