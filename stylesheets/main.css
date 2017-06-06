@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .intro {
     height: 70vh;
     background: url('../media/driver_1920x1280.jpg') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;
@@ -23,6 +28,53 @@
     /*margin: 0 auto;*/
 }
 
+/* spany - nagłówki sekcji, co nas wyróżnia i inne */
+.topics_div {
+    margin-bottom: 20px;
+}
+
+.topics {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 5px solid crimson;
+    margin-left: 8%;
+    /*border-left: 5px solid crimson;*/
+    padding: 15px 10px;
+    /*background-color: rgba(237, 20, 91, 0.7);*/
+    /*color: white;*/
+}
+/*.topics:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*bottom: -10px;*/
+    /*left: 43%;*/
+    /*width: 60px;*/
+    /*height: 5px;*/
+    /*background: #ed145b;*/
+/*}*/
+
+.topics2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px 0 30px;
+}
+.topics2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 43%;
+    width: 60px;
+    height: 3px;
+    background: #ed145b;
+}
+.topics3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px 0 30px;
+}
 
 /*menu responsywne*/
 .topnav {
@@ -74,12 +126,52 @@
 }
 /*menu responsywne koniec*/
 
+/*co nas wyróżnia*/
+#advantages_section {
+    margin: 6% 0;
+}
+.advantages_each {
+    position: relative;
+    display: none;
+}
+
+.advantages_each img {
+    max-width: 30%;
+    margin: 6% 0 4%;
+}
+/*co nas wyróżnia koniec*/
+
+/*organizator i partnerzy*/
+#org_partners {
+    margin: 6% 0;
+}
+.organizator_row {
+    margin-bottom: 50px;
+}
+#skill_logo {
+    width: 70%;
+}
+#fakty_logo {
+    width: 50%;
+}
+
+    /*czego się dowiesz*/
+#get_know {
+    margin: 6% 0;
+}
+
+
 
 /*PROGRAM*/
+#program {
+    margin: 6% 0;
+}
+
 .program_photo_div {
     padding: 5px;
     min-height: 80px;
     text-align: center;
+    /*border-left: 2px solid crimson;*/
 }
 .program_break_div {
     height: 80px;
@@ -88,19 +180,72 @@
 }
 .program_photo {
     max-height: 80px;
+    border-radius: 10px;
 }
+/*.program_photo:hover {*/
+    /*position: absolute;*/
+    /*max-height: 120px;*/
+/*}*/
 .program_title {
-    vertical-align: middle;
+    padding: 1%;
+    padding-left: 3%;
+    border-left: 3px solid crimson;
+    font-size: 18px;
+    /*border-right: 2px solid crimson;*/
+    /*border-radius: 20px;*/
 }
 .program_hour {
     min-height: 80px;
-    padding: 35px;
+    padding: 35px 0 35px 69px;
+    text-align: center;
+}
+.program_hour p {
+    border-bottom: 3px solid crimson;
+}
+
+.coffee_break {
+    padding-top: 2.5%;
 }
 
 /*PRELEGENCI*/
+#prelegenci {
+    margin: 6% 0;
+    /*background-color: rgba(237, 20, 91, 0.1);*/
+}
+.prelegenci_opis_div {
+    border: 1px solid crimson;
+    width: 28%;
+    margin: 2%;
+    padding-top: 2%;
+}
 .prelegenci_opis {
     padding: 25px 35px 15px 25px;
     text-align: justify;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.zwin {
+    display: none;
+}
+.show_fa {
+    display: inline;
+}
+.zwin_rozwin {
+    text-align: center;
+    margin: 15px 0 6px;
+}
+.prelegenci_opis_div {
+    position: relative;
+    top: 200px;
+}
+.in-view2 {
+    position: relative;
+    top: 0;
+    transition: 1.8s ease;
 }
 
 @media screen and (max-width: 650px) {
