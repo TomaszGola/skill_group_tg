@@ -7,7 +7,7 @@ body {
 }
 
 .intro {
-    height: 70vh;
+    height: 100vh;
     background: url('../media/driver_1920x1280.jpg') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;
 }
 .intro_logo_div {
@@ -129,6 +129,7 @@ body {
 
 /*co nas wyróżnia*/
 #advantages_section {
+    height: 100vh;
     margin: 6% 0;
 }
 .advantages_each {
@@ -144,6 +145,7 @@ body {
 
 /*organizator i partnerzy*/
 #org_partners {
+    height: 100vh;
     margin: 6% 0;
 }
 .organizator_row {
@@ -158,6 +160,7 @@ body {
 
     /*czego się dowiesz*/
 #get_know {
+    height: 100vh;
     margin: 6% 0;
 }
 
@@ -165,6 +168,7 @@ body {
 
 /*PROGRAM*/
 #program {
+    height: 100vh;
     margin: 6% 0;
 }
 
@@ -210,6 +214,7 @@ body {
 
 /*PRELEGENCI*/
 #prelegenci {
+    height: 100vh;
     margin: 6% 0;
     /*background-color: rgba(237, 20, 91, 0.1);*/
 }
