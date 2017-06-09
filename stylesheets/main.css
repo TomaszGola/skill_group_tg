@@ -82,6 +82,8 @@ body {
     overflow: hidden;
     width: 90%;
     margin: 0 auto;
+    top: 50%;
+    position: relative;
 }
 .topnav a {
     float: left;
@@ -385,4 +387,151 @@ a, a:hover, a:focus {
     .sidr-inner .navbar-default > ul > li.has-sub > a { background: none; }
     .sidr-inner .navbar-default > ul > li.has-sub:hover > a { background: none; }
     .sidr-inner .navbar-default > ul > li:not(:last-child) > a { border-right: 0; }
+}
+
+/*MIEJSCE*/
+
+#map_div {
+    height: 70vh;
+    background-color: #9d9d9d;
+    padding: 40px;
+}
+
+#map {
+    height:55vh;
+}
+.miejsce_header {
+    margin-bottom: 40px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.miejsce {
+    margin-top: 90px;
+}
+.map_marker {
+    margin-left: 50px;
+}
+
+
+/*FORMULARZ*/
+#formularz {
+    height: 100vh;
+    text-align: center;
+    padding-bottom: 85px;
+    background-color: #404041;
+}
+#formularz_header {
+    color: #44c8f5;
+    font-size: 43px;
+    line-height: 43px;
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+.form-tickets {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.form-tickets-left {
+    width: 50%;
+    float: left;
+}
+.form-tickets-right {
+    width: 50%;
+    float: left;
+}
+.form-ticket-reg {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.form-tickets-submit {
+    background-color: #44c8f5;
+    line-height: 50px;
+    padding: 0px 65px 0px 65px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0px;
+    border: none;
+}
+.form-ticket-left-box, .form-ticket-right-box {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.form-tickets label {
+    display: block;
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+}
+.form-tickets input[type="text"], .form-tickets input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #404041;
+    font-size: 16px;
+    border: none;
+    font-weight: normal;
+}
+h6 {
+    color: #44c8f5;
+    font-size: 23px;
+    line-height: 23px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+.empty {
+    width: 100%;
+    display: block;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 21px;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #404041;
+    font-size: 16px;
+}
+.selectAction {
+    position: absolute;
+    right: 0px;
+    top: 21px;
+    cursor: pointer;
+}
+.selectBox {
+    position: relative;
+}
+.selectBox img {
+    vertical-align: middle;
+}
+.selectBox img {
+    border: 0;
+}
+
+.selectOption {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    color: #404041;
+    z-index: 1000;
+    min-width: 100px;
+    width: 100%;
 }

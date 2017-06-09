@@ -373,18 +373,127 @@
   </div>
 </div>
 
-  <div>
-    <div id="map" style="width:100%;height:50vh;"></div>
+  <div class="container-fluid" id="map_div">
+
+    <div class="col-xs-12 col-md-1">
+      <h2 class="miejsce_header">Miejsce</h2>
+      <i class="fa fa-map-marker fa-5x map_marker" aria-hidden="true"></i>
+    </div>
+    <div class="col-xs-3 miejsce">
+      <p>
+        hotel najzajebistszy<br>
+        ul. dziurawa<br>
+        Miasto<br>
+        kod<br>
+      </p>
+    </div>
+    <div class="col-xs-8" id="map"></div>
+    <!--<div class="col-xs-1"></div>-->
   </div>
 
 </div>
 
-<div>
-  <form action="form-to-email.php" method="post">
-    Name: <input type="text" name="name">
-    Email: <input type="text" name="email">
-    <input type="submit" value="wyślij to!!!!">
-  </form>
+<div class="container" id="formularz">
+  <div class="col-xs-12">
+    <h2 id="formularz_header">formularz zgłoszeniowy</h2>
+    <form action="form-to-email.php" method="post">
+      <div class="form-tickets clearfix">
+        <div class="form-tickets-left">
+          <div class="form-ticket-left-box">
+            <h6>dane do faktury</h6>
+            <label>
+              Nazwa firmy
+              <input type="text" name="sCompanyName" value required>
+            </label>
+            <label style="width:48%;float:left;">
+              Ulica
+              <input type="text" name="sCompanyStreet" value required>
+            </label>
+            <label>
+              Nr ulicy
+              <input type="text" name="sCompanyNumber1" value required>
+            </label>
+            <label>
+              Nr lokalu
+              <input type="text" name="sCompanyNumber2" value>
+            </label>
+            <div class="clearfix"></div>
+            <label style="width:48%;float:left;">
+              Kod pocztowy
+              <input type="text" name="sCompanyCode" value>
+            </label>
+            <label style="width:48%;float:right;">
+              Miasto
+              <input type="text" name="sCompanyCity" value>
+            </label>
+            <div class="clearfix"></div>
+            <label>
+              NIP
+              <input type="text" name="sCompanyNip" value required>
+            </label>
+            <label>
+              E-mail do wysłania faktury
+              <input type="email" name="sCompanyEmail" value required>
+            </label>
+          </div>
+          <div class="form-tickets-right">
+            <div class="form-ticket-right-box">
+              <h6>dane uczestników</h6>
+              <label class="selectBox">
+                Wybierz ilość osób
+                <input class="selectInput" type="text" id="sPersonNumber" name="sPersonNumber" value required>
+                <span class="empty"></span>
+                <img class="selectAction" src="">
+                <div class="selectOption sPersonNumberAction" style="display: none;">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+              </label>
+              <label class="selectBox">
+                wybierz typ biletu
+                <input class="selectInput" id="sTicketType" readonly type="text" name="sTicketType" value="bilet 1-dniowy" required>
+                <img class="selectAction" src="">
+                <div class="selectOption" style="display: none;">
+                  <span>bilet 1-dniowy</span>
+                  <span>bilet 2-dniowy</span>
+                  <span>bilet vip</span>
+                </div>
+              </label>
+              <div class="sPersonContainer" style="margin-top:45px"></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-ticket-reg clearfix">
+            <input type="checkbox" name="iReg1" value="1" required>
+            <p>Wyrażam zgodę na przechowywanie i przetwarzanie moich danych osobowych dla potrzeb procesu rejestracji przez Gospodarzy i Organizatora wydarzenia zgodnie z Ustawą z dnia 29.08.1997 o Ochronie Danych Osobowych (Dz. U. Nr 133 poz. 883). Świadom jestem faktu, że przysługuje mi prawo wglądu do swoich danych oraz prawo do ich poprawiania.</p>
+            <div class="clearfix"></div>
+            <input type="checkbox" name="iReg2" value="1">
+            <p>Wyrażam zgodę na przechowywanie i przetwarzanie moich danych osobowych w celach marketingowych przez Gospodarzy i Organizatora wydarzenia zgodnie z Ustawą z dnia 29.08.1997 o Ochronie Danych Osobowych (Dz. U. Nr 133 poz. 883). Świadom jestem faktu, że przysługuje mi prawo wglądu do swoich danych oraz prawo do ich poprawiania.</p>
+            <div class="clearfix"></div>
+            <input type="checkbox" name="iReg3" value="1">
+            <p>Zgłaszając uczestnictwo akceptuję <a href="http://indm.pl/regulamin.html" target="_blank">warunki uczestnictwa</a> w in Digital Marketing</p>
+          </div>
+        </div>
+        <input type="submit" class="form-tickets-submit" name="sSubmit" value="zgłoś się">
+      </div>
+
+
+
+
+      <!--Name: <input type="text" name="name">-->
+      <!--Email: <input type="text" name="email">-->
+      <!--<input type="submit" value="wyślij to!!!!">-->
+    </form>
+  </div>
+
 </div>
 
 
