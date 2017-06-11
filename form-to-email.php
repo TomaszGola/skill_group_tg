@@ -17,12 +17,18 @@ if(IsInjected($visitor_email))
 }
 
 $email_from = 'tomasz.m.gola@gmail.com';
-$email_subject = "potwierdzenie konfy!!";
-$email_body = "no prosze. You have received a new message from the user $name.\n with email: $visitor_email \r\n".
-
+$email_subject = "Konferencja 30.07.2017";
+$email_body = '<html><body>';
+$email_body .='<table rules="all" style="bottom-border: 2px solid #123;" cellpadding="10">';
+$email_body .="<tr style='background: #eee;'><td><strong>Witaj $name</strong></td><td>";
+$email_body .="<tr><td>wymysl jakiś tekst tutaj i nie udalo mi sie jeszcze ustawic polskich znaków....</td></tr>";
+$email_body .='</table>';
+$email_body .='</body></html>';
 
 $to = "$visitor_email, tomasz.m.gola@gmail.com ";
 $headers = "From: $email_from \r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done.
