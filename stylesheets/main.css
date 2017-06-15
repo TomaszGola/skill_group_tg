@@ -7,7 +7,7 @@ body {
 }
 
 .intro {
-    height: 70vh;
+    height: 100vh;
     background: url('../media/driver_1920x1280.jpg') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;
 }
 .intro_logo_div {
@@ -82,6 +82,8 @@ body {
     overflow: hidden;
     width: 90%;
     margin: 0 auto;
+    top: 50%;
+    position: relative;
 }
 .topnav a {
     float: left;
@@ -129,6 +131,7 @@ body {
 
 /*co nas wyróżnia*/
 #advantages_section {
+    height: 100vh;
     margin: 6% 0;
 }
 .advantages_each {
@@ -144,6 +147,7 @@ body {
 
 /*organizator i partnerzy*/
 #org_partners {
+    height: 100vh;
     margin: 6% 0;
 }
 .organizator_row {
@@ -158,6 +162,7 @@ body {
 
     /*czego się dowiesz*/
 #get_know {
+    height: 100vh;
     margin: 6% 0;
 }
 
@@ -165,6 +170,7 @@ body {
 
 /*PROGRAM*/
 #program {
+    height: 100vh;
     margin: 6% 0;
 }
 
@@ -210,6 +216,7 @@ body {
 
 /*PRELEGENCI*/
 #prelegenci {
+    height: 100vh;
     margin: 6% 0;
     /*background-color: rgba(237, 20, 91, 0.1);*/
 }
@@ -381,3 +388,236 @@ a, a:hover, a:focus {
     .sidr-inner .navbar-default > ul > li.has-sub:hover > a { background: none; }
     .sidr-inner .navbar-default > ul > li:not(:last-child) > a { border-right: 0; }
 }
+
+/*MIEJSCE*/
+
+#map_div {
+    height: 70vh;
+    background-color: #9d9d9d;
+    padding: 40px;
+}
+
+#map {
+    height:55vh;
+}
+.miejsce_header {
+    margin-bottom: 40px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.miejsce {
+    margin-top: 90px;
+}
+.map_marker {
+    margin-left: 50px;
+}
+
+
+/*FORMULARZ*/
+
+#section-20 {
+    text-align: center;
+    padding-bottom: 85px;
+    background-color: #404041;
+}
+
+.form-tickets {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h6 {
+    color: #44c8f5;
+    font-size: 23px;
+    line-height: 23px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+
+.form-ticket-left {
+    width: 50%;
+    float: left;
+}
+
+.form-ticket-right {
+    width: 50%;
+
+    float: left;
+}
+
+.form-ticket-left-box, .form-ticket-right-box {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.form-tickets label {
+    display: block;
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.form-tickets input[type="text"], .form-tickets input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #404041;
+    font-size: 16px;
+    border: none;
+    font-weight: normal;
+}
+
+.form-tickets textarea {
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #404041;
+    font-size: 16px;
+    border: none;
+    font-weight: normal;
+    height: 100px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectOption {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    color: #404041;
+    z-index: 1000;
+    min-width: 100px;
+    width: 100%;
+}
+
+.selectOption span {
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+
+.selectOption span:hover {
+    font-weight: bold;
+}
+
+.selectAction {
+    position: absolute;
+    right: 0px;
+    top: 21px;
+    cursor: pointer;
+}
+
+.form-ticket-reg {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.form-ticket-reg p {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 16px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.form-ticket-reg input {
+    float: left;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border: none;
+    margin-right: 20px;
+}
+
+.form-tickets-submit {
+    background-color: #44c8f5;
+    line-height: 50px;
+    padding: 0px 65px 0px 65px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0px;
+    border: none;
+}
+
+.empty {
+    width: 100%;
+    display: block;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 21px;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #404041;
+    font-size: 16px;
+
+}
+
+/********** KONTAKT **********/
+@media (max-width: 980px) {
+    .menu_dol {
+        margin-top: 140px !important;
+    }
+
+}
+
+@media (min-width: 981px) and (max-width: 1024px) {
+    .menu_dol {
+        margin-top: 15px !important;
+    }
+
+}
+
+.kontakt {
+    height: 340px;
+}
+
+.adres {
+    font-size: 1.45em;
+    margin-top: 65px;
+}
+
+.spolecznosci-li {
+    margin-left: -50px;
+    margin-top: 10px;
+}
+
+#imie_zap,
+#nazwisko_zap,
+#email_zap,
+#telefon_zap {
+    width: 45%;
+    float: left;
+}
+
+#formWiadomosc input,
+#formWiadomosc textarea {
+    border-radius: 20px;
+}
+/********** KONTAKT KONIEC **********/
