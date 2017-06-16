@@ -245,13 +245,13 @@ body {
     background: #333;
 }
 
-.program_photo_div {
-    /*padding: 5px;*/
-    min-height: 70px;
-    text-align: center;
-    /*margin-bottom: 10px;*/
-    /*border-left: 2px solid rgba(41, 66, 144, 1);*/
-}
+/*.program_photo_div {*/
+    /*!*padding: 5px;*!*/
+    /*min-height: 70px;*/
+    /*text-align: center;*/
+    /*!*margin-bottom: 10px;*!*/
+    /*!*border-left: 2px solid rgba(41, 66, 144, 1);*!*/
+/*}*/
 .program_break_div {
     height: 80px;
     padding: 1.5% 1% 1% 1%;
@@ -276,6 +276,8 @@ body {
 
 .program_photo {
     max-height: 98px;
+    position: relative;
+    left: 8%;
     /*border-radius: 10px;*/
 }
 /*.program_photo:hover {*/
