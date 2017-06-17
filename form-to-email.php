@@ -1,16 +1,17 @@
 <?php
 
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
+$sCompanyName = $_POST['sCompanyName'];
+$sCompanyStreet = $_POST['sCompanyStreet'];
+$sCompanyNumber1 = $_POST['sCompanyNumber1'];
+$sCompanyNumber2 = $_POST['sCompanyNumber2'];
+$sCompanyCode = $_POST['sCompanyCode'];
+$sCompanyCity = $_POST['sCompanyCity'];
+$sCompanyNip = $_POST['sCompanyNip'];
+$sCompanyEmail = $_POST['sCompanyEmail'];
+$sCompanyPeople = $_POST['osoby'];
+$sCompanyTicket = $_POST['bilety'];
 
-//Validate first
-if(empty($name)||empty($visitor_email))
-{
-    echo "Name and email are mandatory!";
-    exit;
-}
-
-if(IsInjected($visitor_email))
+if(IsInjected($sCompanyEmail))
 {
     echo "Bad email value!";
     exit;
@@ -19,13 +20,21 @@ if(IsInjected($visitor_email))
 $email_from = 'tomasz.m.gola@gmail.com';
 $email_subject = "Konferencja 30.07.2017";
 $email_body = '<html><body>';
-$email_body .='<table rules="all" style="bottom-border: 2px solid #123;" cellpadding="10">';
-$email_body .="<tr style='background: #eee;'><td><strong>Witaj $name</strong></td><td>";
-$email_body .="<tr><td>wymysl jakiś tekst tutaj i nie udalo mi sie jeszcze ustawic polskich znaków....</td></tr>";
+$email_body .='<table>';
+$email_body .="<tr><td><strong>Witaj $sCompanyName</strong></td><td>";
+$email_body .="<tr><td>Adres Twojej firmy:</td></tr>";
+$email_body .="<tr><td>Nazwa ulicy: $sCompanyStreet</td></tr>";
+$email_body .="<tr><td>Numer ulicy: $sCompanyNumber1</td></tr>";
+$email_body .="<tr><td>Numer lokalu: $sCompanyNumber2</td></tr>";
+$email_body .="<tr><td>Kod pocztowy: $sCompanyCode</td></tr>";
+$email_body .="<tr><td>Miasto: $sCompanyCity</td></tr>";
+$email_body .="<tr><td>NIP: $sCompanyNip</td></tr>";
+$email_body .="<tr><td>Ilość osób zgłoszonych przez Twoją firmę: $sCompanyPeople</td></tr>";
+$email_body .="<tr><td>Wybrałeś bilet: $sCompanyTicket</td></tr>";
 $email_body .='</table>';
 $email_body .='</body></html>';
 
-$to = "$visitor_email, tomasz.m.gola@gmail.com ";
+$to = "$sCompanyEmail, tomasz.m.gola@gmail.com ";
 $headers = "From: $email_from \r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -59,3 +68,4 @@ function IsInjected($str)
 }
 
 ?>
+
