@@ -121,7 +121,7 @@ body {
     padding: 14px 0;
     text-decoration: none;
     font-size: 17px;
-    background-color: #0E1622;
+    background-color: rgb(64, 64, 65);
     transition: all 0.5s;
     margin:0 1px 0 0;
 }
@@ -161,7 +161,7 @@ body {
     min-height: 110vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgba(14, 22, 34, 0.6);
+    background-color: rgb(64, 64, 65);
     color: white;
 }
 .advantages_each {
@@ -189,7 +189,7 @@ body {
 }
 
 .topics_div_org_part {
-    background-color: rgba(14, 22, 34, 0.8);
+    background-color: rgb(64, 64, 65);
     height: 41px;
     text-align: center;
     margin-bottom: 4%;
@@ -219,7 +219,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgba(14, 22, 34, 0.3);
+    background-color: rgb(64, 64, 65);
     color: white;
 }
 
@@ -245,13 +245,13 @@ body {
     background: #333;
 }
 
-.program_photo_div {
-    /*padding: 5px;*/
-    min-height: 70px;
-    text-align: center;
-    /*margin-bottom: 10px;*/
-    /*border-left: 2px solid rgba(41, 66, 144, 1);*/
-}
+/*.program_photo_div {*/
+    /*!*padding: 5px;*!*/
+    /*min-height: 70px;*/
+    /*text-align: center;*/
+    /*!*margin-bottom: 10px;*!*/
+    /*!*border-left: 2px solid rgba(41, 66, 144, 1);*!*/
+/*}*/
 .program_break_div {
     height: 80px;
     padding: 1.5% 1% 1% 1%;
@@ -276,6 +276,8 @@ body {
 
 .program_photo {
     max-height: 98px;
+    position: relative;
+    left: 8%;
     /*border-radius: 10px;*/
 }
 /*.program_photo:hover {*/
@@ -292,11 +294,11 @@ body {
     margin-bottom: 10px;
     /*border-right: 2px solid rgba(41, 66, 144, 1);*/
     /*border-radius: 20px;*/
-    background-color:  rgba(204, 21, 89, 0.2);
-    background: -webkit-linear-gradient(left,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(right,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); /*Standard*/
+    background-color:  rgba(64, 64, 65, 1);
+    /*background: -webkit-linear-gradient(left,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); !*Safari 5.1-6*!*/
+    /*background: -o-linear-gradient(right,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); !*Opera 11.1-12*!*/
+    /*background: -moz-linear-gradient(right,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); !*Fx 3.6-15*!*/
+    /*background: linear-gradient(to right, rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); !*Standard*!*/
 }
 
 .name {
@@ -348,7 +350,12 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgb(110, 115, 122);
+    background-color: rgb(64, 64, 65);
+}
+
+.zero_margin {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .prelegenci_topic {
@@ -356,17 +363,18 @@ body {
 }
 .prelegenci_opis_div {
     /*border: 1px solid rgba(41, 66, 144, 1);*/
-    border-radius: 6%;
-    width: 28%;
+    border-radius: 3%;
+    width: 26%;
     margin: 2%;
     padding-top: 2%;
     background-color: white;
 }
 .prelegenci_opis {
-    padding: 25px 35px 15px 25px;
+    /*padding: 25px 35px 15px 25px;*/
     text-align: justify;
 }
 .prelegent_name {
+    margin-top: 10%;
     font-weight: bold;
 }
 .prelegent_firma {
@@ -565,6 +573,10 @@ a, a:hover, a:focus {
     background-color: #404041;
 }
 
+#section-20 h2 {
+    color: white;
+}
+
 .form-tickets {
     margin-left: 10%;
     margin-right: 10%;
@@ -740,11 +752,34 @@ h6 {
 .kontakt {
     min-height: 80vh;
     padding-bottom: 85px;
+    padding-top: 40px;
+}
+
+.topics_kontakt {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*border-left: 5px solid rgba(41, 66, 144, 1);*/
+    /*padding: 15px 10px;*/
+    /*background-color: rgba(237, 20, 91, 0.7);*/
+    /*color: white;*/
+}
+.topics_kontakt2 {
+    font-size: 25px;
+    font-weight: 700;
+    /*border-left: 5px solid rgba(41, 66, 144, 1);*/
+    /*padding: 15px 10px;*/
+    /*background-color: rgba(237, 20, 91, 0.7);*/
+    /*color: white;*/
 }
 
 .adres {
     font-size: 1.45em;
-    margin-top: 65px;
+    margin-top: 55px;
+}
+
+.adres i {
+    margin: 10px 20px 0 0;
 }
 
 .spolecznosci-li {
@@ -758,6 +793,10 @@ h6 {
 #telefon_zap {
     width: 45%;
     float: left;
+}
+
+#formWiadomosc {
+    margin-top: 35px;
 }
 
 #formWiadomosc input,
