@@ -816,22 +816,45 @@
       <!--</div>-->
       <div class="form-group">
         <div class="col-md-12">
-          <input type="text" class="form-control validate[required]" placeholder="Imię" id="imie_zap" name="imie_zap">
-          <input type="text" class="form-control validate[required] pull-right" placeholder="Nazwisko" id="nazwisko_zap"
-                 name="nazwisko_zap">
+          <input type="text"
+                 class="form-control validate[required]"
+                 placeholder="Imię"
+                 id="imie_zap"
+                 name="ContactName"
+                 required>
+          <input type="text"
+                 class="form-control validate[required] pull-right"
+                 placeholder="Nazwisko"
+                 id="nazwisko_zap"
+                 name="ContactSecondName"
+                 required>
         </div>
       </div>
       <div class="form-group">
         <div class="col-sm-12">
-          <input type="email" class="form-control validate[required, custom[email]]" placeholder="Email" id="email_zap"
-                 name="email_zap">
-          <input type="text" class="form-control pull-right" placeholder="Telefon" id="telefon_zap" name="telefon_zap">
+          <input type="email"
+                 class="form-control validate[required, custom[email]]"
+                 placeholder="Email"
+                 id="email_zap"
+                 name="ContactEmail"
+                 required>
+          <input type="text"
+                 class="form-control pull-right"
+                 placeholder="Telefon"
+                 id="telefon_zap"
+                 name="ContactPhone"
+                 required>
         </div>
       </div>
       <div class="form-group">
         <div class="col-sm-12">
-          <textarea class="form-control validate[required]" rows="3" placeholder="Treść wiadomości" id="zapytanie_zap"
-                    name="zapytanie_zap"></textarea>
+          <textarea class="form-control validate[required]"
+                    rows="3"
+                    placeholder="Treść wiadomości"
+                    id="zapytanie_zap"
+                    name="ContactText"
+                    required>
+          </textarea>
         </div>
       </div>
       <!--<div class="col-md-12 center UP">-->

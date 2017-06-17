@@ -811,3 +811,7 @@ h6 {
     padding:15px;
 }
 
+textarea {
+    max-width: 100%;
+}
+
