@@ -66,3 +66,16 @@ $(document).ready(function () {
         });
     }
 });
+
+
+
+
+
+function showSpoiler(obj)
+{
+  var inner = obj.parentNode.getElementsByClassName("inner")[0];
+  if (inner.style.display == "none")
+    inner.style.display = "";
+  else
+    inner.style.display = "none";
+}
