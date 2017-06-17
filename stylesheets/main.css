@@ -815,3 +815,9 @@ textarea {
     max-width: 100%;
 }
 
+.arrow-prelegenci {
+    width:20px;
+    transform: rotate(90deg);
+    display: block;
+    margin:0 auto;
+}
