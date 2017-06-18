@@ -97,3 +97,6 @@ function showSpoiler2(obj) {
     //     inner.style.display = "none";
     //     inner2.style.display = "none";
 }
+
+function dane_osoby () {
+}

@@ -10,6 +10,13 @@ $sCompanyNip = $_POST['sCompanyNip'];
 $sCompanyEmail = $_POST['sCompanyEmail'];
 $sCompanyPeople = $_POST['osoby'];
 $sCompanyTicket = $_POST['bilety'];
+$aName = $_POST['aName'];
+$aSurname = $_POST['aSurname'];
+$aPosition = $_POST['aPosition'];
+$aEmail = $_POST['aEmail'];
+$aPhone = $_POST['aPhone'];
+$aCompany = $_POST['aCompany'];
+$aNote = $_POST['aNote'];
 
 if(IsInjected($sCompanyEmail))
 {
@@ -29,8 +36,12 @@ $email_body .="<tr><td>Numer lokalu: $sCompanyNumber2</td></tr>";
 $email_body .="<tr><td>Kod pocztowy: $sCompanyCode</td></tr>";
 $email_body .="<tr><td>Miasto: $sCompanyCity</td></tr>";
 $email_body .="<tr><td>NIP: $sCompanyNip</td></tr>";
-$email_body .="<tr><td>Ilość osób zgłoszonych przez Twoją firmę: $sCompanyPeople</td></tr>";
-$email_body .="<tr><td>Wybrałeś bilet: $sCompanyTicket</td></tr>";
+$email_body .="<tr><td>Osoba zgłoszona przez Twoją firmę</td></tr>";
+$email_body .="<tr><td>Imię i nazwisko: $aName $aSurname</td></tr>";
+$email_body .="<tr><td>Stanowisko: $sCompanyTicket</td></tr>";
+$email_body .="<tr><td>E-mail: $aEmail</td></tr>";
+$email_body .="<tr><td>Telefon: $aPhone</td></tr>";
+$email_body .="<tr><td>Uwagi: $aNote</td></tr>";
 $email_body .='</table>';
 $email_body .='</body></html>';
 

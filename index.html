@@ -719,21 +719,80 @@
               <!--<span>10</span>-->
               <!--</div>-->
               <!--</label>-->
-              <label>
-                WYBIERZ ILOŚĆ OSÓB
-                <select name="osoby" class="osoby_form" id="osoby_form" required>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10 ">10</option>
-                </select>
-              </label>
+                <label>IMIĘ
+                    <input type="text" name="aName" value="" required/>
+                </label>
+
+                <label>NAZWISKO
+                    <input type="text" name="aSurname" value="" required/>
+                </label>
+
+                <label>STANOWISKO
+                    <input type="text" name="aPosition" value="" required/>
+                </label>
+
+                <label>E-MAIL
+                    <input type="email" name="aEmail" value="" required/>
+                </label>
+
+
+                <label>TEL. KOM. (do komunikacji podczas wydarzenia)
+                    <input type="text" name="aPhone" value=""/>
+                </label>
+
+
+                <!--<label>-->
+                    <!--<span style="display:inline-block;width:34px;text-align:center;margin-right:10px;">TAK</span><span-->
+                        <!--style="display:inline-block;width:34px;text-align:center;margin-right:10px;">NIE</span><br/>-->
+                    <!--<input class="yes" type="checkbox" onchange="changeSelect(1, $(this))"-->
+                           <!--style="width:34px;height:34px;margin-right:10px;float:left;" name="aYes[]" value="1"/><input-->
+                        <!--onchange="changeSelect(2, $(this))" class="no" type="checkbox"-->
+                        <!--style="width:34px;height:34px;margin-right:10px;float:left;" name="aNo[]" value="1" checked/><span-->
+                        <!--style="float:left;display:inline-block;line-height:17px;padding-top:3px;">Tłumaczenie<br/>symultaniczne</span>-->
+                <!--</label>-->
+                <div class="clearfix"></div>
+
+
+                <label>NAZWA FIRMY WIDOCZNA NA IDENTYFIKATORZE
+                    <input type="text" name="aCompany" value=""/>
+                </label>
+
+                <label>UWAGI
+                    <textarea name="aNote"></textarea>
+                </label>
+
+                <!--<label class="selectBox">SKĄD DOWIEDZIAŁEŚ SIĘ O WYDARZENIU-->
+                    <!--<input class="selectInput" readonly type="text" name="aHow[]" value="INTERNET" required/>-->
+                    <!--<img class="selectAction" src="img/select.png"/>-->
+                    <!--<div class="selectOption">-->
+                        <!--<span>INTERNET</span>-->
+                        <!--<span>PRASA</span>-->
+                        <!--<span>REKLAMA MIEJSKA</span>-->
+                        <!--<span>ZNAJOMI</span>-->
+                        <!--<span>INNE</span>-->
+                    <!--</div>-->
+
+                <!--</label>-->
+
+<!--właściwy "wybierz liczbę osób"-->
+                <!--<label>-->
+                <!--WYBIERZ ILOŚĆ OSÓB-->
+                <!--<select name="osoby" class="osoby_form" id="osoby_form" required>-->
+                  <!--<option value="1">1</option>-->
+                  <!--<option value="2">2</option>-->
+                  <!--<option value="3">3</option>-->
+                  <!--<option value="4">4</option>-->
+                  <!--<option value="5">5</option>-->
+                  <!--<option value="6">6</option>-->
+                  <!--<option value="7">7</option>-->
+                  <!--<option value="8">8</option>-->
+                  <!--<option value="9">9</option>-->
+                  <!--<option value="10 ">10</option>-->
+                <!--</select>-->
+              <!--</label>-->
+                <!--koniec właściwy "wybierz liczbę osób"-->
+
+
               <!--<label class="selectBox">WYBIERZ TYP BILETU-->
               <!--<input class="selectInput" id="sTicketType" readonly  type="text" name="sTicketType" value="BILET 1-DNIOWY" required />-->
               <!--<img class="selectAction" src="img/select.png" />-->
@@ -744,15 +803,18 @@
               <!--</div>-->
               <!--</label>-->
 
-              <label>
-                WYBIERZ TYP BILETU
-                <select name="bilety" class="osoby_form" id="bilety_form" required>
-                  <option value="1-dniowy">Bilet 1-dniowy</option>
-                  <option value="2-dniowy">Bilet 2-dniowy</option>
-                  <option value="VIP">Bilet VIP</option>
-                </select>
-              </label>
-              <div class="sPersonContainer" style="margin-top:45px">
+                <!--właściwy typ biletu-->
+              <!--<label>-->
+                <!--WYBIERZ TYP BILETU-->
+                <!--<select name="bilety" class="osoby_form" id="bilety_form" required>-->
+                  <!--<option value="1-dniowy">Bilet 1-dniowy</option>-->
+                  <!--<option value="2-dniowy">Bilet 2-dniowy</option>-->
+                  <!--<option value="VIP">Bilet VIP</option>-->
+                <!--</select>-->
+              <!--</label>-->
+                <!--koniec właściwy typ biletu-->
+
+                <div class="sPersonContainer" style="margin-top:45px">
               </div>
             </div>
           </div>
