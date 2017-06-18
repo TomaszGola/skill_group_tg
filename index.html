@@ -452,11 +452,11 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum."</span>
         <img src="media/arrow-point-to-right.svg" onclick="showSpoiler(this);" class="arrow-prelegenci"/>
-        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);" class="arrow-prelegenci2"/>
+        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);"
+             class="arrow-prelegenci2"/>
         <!--<i class="fa fa-arrow-circle-o-down fa-2x" onclick="showSpoiler(this)" aria-hidden="true"></i>-->
         <!--<i class="fa fa-arrow-circle-o-up fa-2x inner" style="display: none" onclick="showSpoiler(this)" aria-hidden="true"></i>-->
       </div>
-
     </div>
 
 
@@ -476,7 +476,8 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum."</span>
         <img src="media/arrow-point-to-right.svg" onclick="showSpoiler(this);" class="arrow-prelegenci"/>
-        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);" class="arrow-prelegenci2"/>
+        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);"
+             class="arrow-prelegenci2"/>
       </div>
     </div>
 
@@ -496,7 +497,8 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum."</span>
         <img src="media/arrow-point-to-right.svg" onclick="showSpoiler(this);" class="arrow-prelegenci"/>
-        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);" class="arrow-prelegenci2"/>
+        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);"
+             class="arrow-prelegenci2"/>
       </div>
     </div>
 
@@ -520,7 +522,8 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum."</span>
         <img src="media/arrow-point-to-right.svg" onclick="showSpoiler(this);" class="arrow-prelegenci"/>
-        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);" class="arrow-prelegenci2"/>
+        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);"
+             class="arrow-prelegenci2"/>
       </div>
     </div>
 
@@ -540,11 +543,13 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum."</span>
         <img src="media/arrow-point-to-right.svg" onclick="showSpoiler(this);" class="arrow-prelegenci"/>
-        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);" class="arrow-prelegenci2"/>
+        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);"
+             class="arrow-prelegenci2"/>
       </div>
     </div>
 
     <div class="col-md-4 prelegenci_opis_div">
+
       <div class="col-md-6 col-md-offset-3">
         <img src="media/prelegent2.jpg" class="img-responsive img-rounded">
       </div>
@@ -560,7 +565,8 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum."</span>
         <img src="media/arrow-point-to-right.svg" onclick="showSpoiler(this);" class="arrow-prelegenci"/>
-        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);" class="arrow-prelegenci2"/>
+        <img src="media/arrow-point-to-right.svg" style="display: none" onclick="showSpoiler2(this);"
+             class="arrow-prelegenci2"/>
       </div>
     </div>
   </div>
@@ -713,21 +719,21 @@
               <!--<span>10</span>-->
               <!--</div>-->
               <!--</label>-->
-
-              <p>Wybierz ilość osób</p>
-              <select name="osoby" id="osoby_form" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10 ">10</option>
-              </select>
-
+              <label>
+                WYBIERZ ILOŚĆ OSÓB
+                <select name="osoby" class="osoby_form" id="osoby_form" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10 ">10</option>
+                </select>
+              </label>
               <!--<label class="selectBox">WYBIERZ TYP BILETU-->
               <!--<input class="selectInput" id="sTicketType" readonly  type="text" name="sTicketType" value="BILET 1-DNIOWY" required />-->
               <!--<img class="selectAction" src="img/select.png" />-->
@@ -738,12 +744,14 @@
               <!--</div>-->
               <!--</label>-->
 
-              <p>Wybierz typ biletu</p>
-              <select name="bilety" id="bilety_form" required>
-                <option value="1">Bilet 1-dniowy</option>
-                <option value="2">Bilet 2-dniowy</option>
-                <option value="VIP">Bilet VIP</option>
-              </select>
+              <label>
+                WYBIERZ TYP BILETU
+                <select name="bilety" class="osoby_form" id="bilety_form" required>
+                  <option value="1-dniowy">Bilet 1-dniowy</option>
+                  <option value="2-dniowy">Bilet 2-dniowy</option>
+                  <option value="VIP">Bilet VIP</option>
+                </select>
+              </label>
               <div class="sPersonContainer" style="margin-top:45px">
               </div>
             </div>
