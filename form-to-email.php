@@ -19,7 +19,7 @@ if(IsInjected($sCompanyEmail))
 
 $email_from = 'tomasz.m.gola@gmail.com';
 $email_subject = "Konferencja 30.07.2017";
-$email_body = '<html><body>';
+$email_body = '<html><head><meta charset="UTF-8"></head><body>';
 $email_body .='<table>';
 $email_body .="<tr><td><strong>Witaj $sCompanyName</strong></td><td>";
 $email_body .="<tr><td>Adres Twojej firmy:</td></tr>";
