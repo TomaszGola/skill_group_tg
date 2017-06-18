@@ -29,7 +29,7 @@ $email_body .='</body></html>';
 $to = "$ContactEmail, tomasz.m.gola@gmail.com ";
 $headers = "From: $email_from \r\n";
 $headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done.
