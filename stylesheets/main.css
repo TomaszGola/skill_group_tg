@@ -821,3 +821,9 @@ textarea {
     display: block;
     margin:0 auto;
 }
+.arrow-prelegenci2 {
+    width:20px;
+    transform: rotate(270deg);
+    display: block;
+    margin:0 auto;
+}

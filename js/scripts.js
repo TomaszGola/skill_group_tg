@@ -1,15 +1,15 @@
 /* zwijanie/rozwijanie opisów prelegentów */
-$(".rozwin").click(function () {
+function show_hide1 (obj) {
   $(".hide").addClass("show");
   $(".zwin").addClass("show_fa");
   $(".rozwin").addClass("hide");
-});
+};
 
-$(".zwin").click(function () {
+function show_hide2 () {
   $(".hide").removeClass("show");
   $(".zwin").removeClass("show_fa");
   $(".rozwin").removeClass("hide");
-});
+};
 
 
 /* pojawianie się opisów prelegentów na scroll */
@@ -69,10 +69,31 @@ $(document).ready(function () {
 
 
 function showSpoiler(obj) {
-  var inner = obj.parentNode.getElementsByClassName("inner")[0];
-  if (inner.style.display == "none") {
-    inner.style.display = ""
-  }
-  else
-    inner.style.display = "none";
+    var inner = obj.parentNode.getElementsByClassName("inner")[0];
+    var arrow = obj.parentNode.getElementsByClassName("arrow-prelegenci")[0];
+    var arrow2 = obj.parentNode.getElementsByClassName("arrow-prelegenci2")[0];
+
+    if (inner.style.display == "none") {
+        inner.style.display = "";
+        arrow.style.display = "none";
+        arrow2.style.display = "";
+    }
+    // else
+        // inner.style.display = "none";
+        // arrow.style.display = "";
+}
+
+function showSpoiler2(obj) {
+    var inner = obj.parentNode.getElementsByClassName("inner")[0];
+    var arrow = obj.parentNode.getElementsByClassName("arrow-prelegenci")[0];
+    var arrow2 = obj.parentNode.getElementsByClassName("arrow-prelegenci2")[0];
+
+    if (inner.style.display == "") {
+        inner.style.display = "none";
+        arrow.style.display = "";
+        arrow2.style.display = "none";
+    }
+    // else
+    //     inner.style.display = "none";
+    //     inner2.style.display = "none";
 }
