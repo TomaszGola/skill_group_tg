@@ -4,6 +4,7 @@
 
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: relative;
 }
 
 .intro {
@@ -372,7 +373,7 @@ body {
 
 
 .prelegenci_opis {
-    /*padding: 25px 35px 15px 25px;*/
+    padding: 25px 35px 15px 25px;
     text-align: justify;
 }
 .prelegent_name {
@@ -382,22 +383,37 @@ body {
 .prelegent_firma {
     font-style: italic;
 }
-.hide {
-    display: none;
-}
-.show {
+
+.arrow-prelegenci {
+    width:20px;
+    transform: rotate(90deg);
     display: block;
+    margin:15px auto 10px;
 }
-.zwin {
-    display: none;
+.arrow-prelegenci2 {
+    width:20px;
+    transform: rotate(270deg);
+    display: block;
+    margin:15px auto 10px;
 }
-.show_fa {
-    display: inline;
-}
-.zwin_rozwin {
-    text-align: center;
-    margin: 15px 0 6px;
-}
+
+
+/*.hide {*/
+    /*display: none;*/
+/*}*/
+/*.show {*/
+    /*display: block;*/
+/*}*/
+/*.zwin {*/
+    /*display: none;*/
+/*}*/
+/*.show_fa {*/
+    /*display: inline;*/
+/*}*/
+/*.zwin_rozwin {*/
+    /*text-align: center;*/
+    /*margin: 15px 0 6px;*/
+/*}*/
 .prelegenci_opis_div {
     position: relative;
     top: 200px;
@@ -827,15 +843,4 @@ textarea {
     max-width: 100%;
 }
 
-.arrow-prelegenci {
-    width:20px;
-    transform: rotate(90deg);
-    display: block;
-    margin:0 auto;
-}
-.arrow-prelegenci2 {
-    width:20px;
-    transform: rotate(270deg);
-    display: block;
-    margin:0 auto;
-}
+
