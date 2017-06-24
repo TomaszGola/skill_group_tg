@@ -205,6 +205,7 @@ body {
     font-weight: 700;
     padding: 15px 10px;
     color: white;
+    min-height: 56px;
 }
 
 #skill_logo {
@@ -364,7 +365,7 @@ body {
 }
 .prelegenci_opis_div {
     border: 10px solid rgb(64, 64, 65);
-    border-radius: 3%;
+    /*border-radius: 3%;*/
     /*width: 26%;*/
     /*margin: 2%;*/
     padding-top: 2%;
@@ -424,11 +425,7 @@ body {
     transition: 1.8s ease;
 }
 
-@media screen and (max-width: 650px) {
-    .intro {
-        height: auto;
-    }
-}
+
 .navbar-default > ul > li > a {
     line-height: 60px;
     height: 60px;
@@ -844,3 +841,29 @@ textarea {
 }
 
 
+@media screen and (max-width: 768px) {
+    .intro {
+        height: auto;
+    }
+    .advantages_row {
+        margin-top: 6%;
+    }
+    .topics_div {
+        margin-top: 8%;
+        text-align: left;
+    }
+    .program_break_div {
+        height: 40px;
+        padding: 15% 10% 10% 10%;
+        /*text-align: center;*/
+    }
+    .program_hour {
+        height: 40px;
+        padding: 20% 10% 10% 10%;
+        /*!*text-align: center;*!*/
+        /*font-size: 18px;*/
+        /*vertical-align: middle;*/
+        /*font-weight: bold;*/
+        /*color: rgba(64, 64, 65, 1);*/
+    }
+}
