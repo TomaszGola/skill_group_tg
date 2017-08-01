@@ -10,12 +10,12 @@ body {
 .intro {
     height: 100vh;
     /*background: url('../media/driver_1920x1280.jpg') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;*/
-    background: white; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;
+    background: rgb(11, 57, 77); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;
 }
 .intro_logo_div {
-    height: 20vh;
+    height: 50vh;
     position: relative;
-    margin: 50px 0;
+    margin: 0 0;
     left: 155px;
 }
 .intro_logo {
@@ -110,19 +110,19 @@ body {
     overflow: hidden;
     width: 90%;
     margin: 0 auto;
-    top: 50%;
+    top: 70%;
     position: relative;
 }
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(11, 57, 77);
     text-align: center;
     width:19.5%;
     padding: 14px 0;
     text-decoration: none;
     font-size: 17px;
-    background-color: rgb(64, 64, 65);
+    background-color: white;
     transition: all 0.5s;
     margin:0 1px 0 0;
 }
@@ -162,7 +162,7 @@ body {
     min-height: 110vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgb(64, 64, 65);
+    background-color: rgb(11, 57, 77);
     color: white;
 }
 .advantages_each {
@@ -221,7 +221,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgb(64, 64, 65);
+    background-color: rgb(11, 57, 77);
     color: white;
 }
 
@@ -291,12 +291,12 @@ body {
     color: white;
     /*padding: 1%;*/
     padding-left: 1.5%;
-    border-left: 3px solid rgba(64, 64, 65, 1);
+    border-left: 3px solid rgb(222, 37, 37);
     font-size: 18px;
     margin-bottom: 10px;
     /*border-right: 2px solid rgba(41, 66, 144, 1);*/
     /*border-radius: 20px;*/
-    background-color:  rgba(64, 64, 65, 1);
+    background-color:  rgb(11, 57, 77);
     /*background: -webkit-linear-gradient(left,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); !*Safari 5.1-6*!*/
     /*background: -o-linear-gradient(right,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); !*Opera 11.1-12*!*/
     /*background: -moz-linear-gradient(right,rgba(64, 64, 65, 0.7),rgba(64, 64, 65, 0)); !*Fx 3.6-15*!*/
