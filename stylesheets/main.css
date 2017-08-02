@@ -12,6 +12,16 @@ body {
     /*background: url('../media/driver_1920x1280.jpg') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;*/
     background: rgb(11, 57, 77); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;
 }
+
+.menu_div {
+    height: 40vh;
+    background-color: white;
+}
+
+.main_logo_div {
+    height: 60vh;
+}
+
 .intro_logo_div {
     height: 50vh;
     position: relative;
@@ -162,8 +172,8 @@ body {
     min-height: 110vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgb(11, 57, 77);
-    color: white;
+    background-color: white;
+    /*color: white;*/
 }
 .advantages_each {
     position: relative;
@@ -190,12 +200,13 @@ body {
 }
 
 .topics_div_org_part {
-    background-color: rgb(64, 64, 65);
+    background-color: rgb(11, 57, 77);
     height: 41px;
     text-align: center;
     margin-bottom: 4%;
     margin-top: 6%;
     padding: 0.4%;
+    width: 100%;
     /*border-top: 5px solid rgba(41, 66, 144, 1);*/
     /*border-bottom: 5px solid rgba(41, 66, 144, 1);*/
 }
@@ -258,10 +269,11 @@ body {
     height: 80px;
     padding: 1.5% 1% 1% 1%;
     text-align: center;
+    color: rgb(11, 57, 77);
 }
 
 .program_break_div i {
-    /*color: rgba(110, 115, 122, 1);*/
+    color: rgb(11, 57, 77);
     color: #555;
 }
 
@@ -272,7 +284,7 @@ body {
 }
 
 .program_break2_div i {
-    color: rgba(110, 115, 122, 1);
+    color: rgb(222, 37, 37);
     font-size: 33px;
 }
 
@@ -291,7 +303,7 @@ body {
     color: white;
     /*padding: 1%;*/
     padding-left: 1.5%;
-    border-left: 3px solid rgb(222, 37, 37);
+    /*border-left: 3px solid rgb(222, 37, 37);*/
     font-size: 18px;
     margin-bottom: 10px;
     /*border-right: 2px solid rgba(41, 66, 144, 1);*/
@@ -318,7 +330,7 @@ body {
     font-size: 18px;
     vertical-align: middle;
     font-weight: bold;
-    color: rgba(64, 64, 65, 1);
+    color: rgb(11, 57, 77);
 }
 
 .break_hour {
@@ -329,7 +341,7 @@ body {
     vertical-align: middle;
     font-weight: bold;
     /*color: rgba(64, 64, 65, 1);*/
-    color: rgba(110, 115, 122, 1);
+    color: rgb(222, 37, 37);
 }
 
 /*.program_hour p {*/
@@ -343,7 +355,7 @@ body {
     /*text-align: center;*/
     font-size: 18px;
     font-weight: bold;
-    color: rgba(110, 115, 122, 1);
+    color: rgb(222, 37, 37);
     text-transform: uppercase;
 }
 
@@ -352,7 +364,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgb(64, 64, 65);
+    background-color: rgb(11, 57, 77);
 }
 
 .zero_margin {
@@ -364,7 +376,7 @@ body {
     color: white;
 }
 .prelegenci_opis_div {
-    border: 10px solid rgb(64, 64, 65);
+    border: 10px solid rgb(11, 57, 77);
     /*border-radius: 3%;*/
     /*width: 26%;*/
     /*margin: 2%;*/
@@ -585,7 +597,7 @@ a, a:hover, a:focus {
 #section-20 {
     text-align: center;
     padding-bottom: 85px;
-    background-color: #404041;
+    background-color: rgb(11, 57, 77);
 }
 
 #section-20 h2 {
