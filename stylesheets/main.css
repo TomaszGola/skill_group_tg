@@ -235,7 +235,9 @@ body {
     background-color: rgb(11, 57, 77);
     color: white;
 }
-
+.get_know_span {
+    margin-left: 20px;
+}
 
 
 /*PROGRAM*/
@@ -372,6 +374,16 @@ body {
     margin-right: 0;
 }
 
+.prelegent_photo {
+    width: 130px;
+    height: 130px;
+}
+
+.prelegent_img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
 .prelegenci_topic {
     color: white;
 }
@@ -382,6 +394,7 @@ body {
     /*margin: 2%;*/
     padding-top: 2%;
     background-color: white;
+    min-height: 600px;
 }
 
 
