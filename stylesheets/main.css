@@ -26,8 +26,16 @@ body {
     height: 50vh;
     position: relative;
     margin: 0 0;
-    left: 155px;
+    /*left: 155px;*/
 }
+
+/*.intro_placeDate_div {*/
+    /*height: 50vh;*/
+    /*position: relative;*/
+    /*margin: 0 0;*/
+    /*right: 155px;*/
+/*}*/
+
 .intro_logo {
     max-height: 100%;
 }
@@ -260,13 +268,15 @@ body {
     background: #333;
 }
 
-/*.program_photo_div {*/
-    /*!*padding: 5px;*!*/
-    /*min-height: 70px;*/
-    /*text-align: center;*/
-    /*!*margin-bottom: 10px;*!*/
-    /*!*border-left: 2px solid rgba(41, 66, 144, 1);*!*/
-/*}*/
+.program_photo_div {
+    /*padding: 5px;*/
+    min-height: 70px;
+    text-align: center;
+    /*margin-bottom: 10px;*/
+    /*border-left: 2px solid rgba(41, 66, 144, 1);*/
+    position: relative;
+    right: -31px;
+}
 .program_break_div {
     height: 80px;
     padding: 1.5% 1% 1% 1%;
@@ -323,6 +333,12 @@ body {
 
 .program_title p {
     padding-top: 2.5%;
+}
+
+.lecture_opis {
+    font-size: medium;
+    line-height: 1.5;
+    font-style: oblique;
 }
 
 .program_hour {
