@@ -5,6 +5,7 @@
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     position: relative;
+    background: url('../media/ABC_2388.jpg') no-repeat fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; height: auto; margin: 0;
 }
 
 .margin0 {
@@ -14,7 +15,8 @@ body {
 .intro {
     height: 100vh;
     /*background: url('../media/driver_1920x1280.jpg') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;*/
-    background: rgb(197, 231, 227); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;
+    /*background: rgb(197, 231, 227) url('../media/ABC_2388.jpg'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 0 0 0 0; margin: 0;*/
+    /*background: #fff url('../media/ABC_2388.jpg') no-repeat fixed; -webkit-background-size: 45% auto; -moz-background-size: 45% auto; -o-background-size: 45% auto; background-size: 45% auto; padding: 0 0 0 0; height: auto; width: 100% ; margin: 0;*/
     width: 100%;
 }
 
@@ -35,8 +37,12 @@ body {
     height: 60vh;
 }
 
-.blue {
-    background-color: rgb(11, 57, 77);
+.opacity {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.opacity2 {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .intro_logo_div {
@@ -83,6 +89,7 @@ body {
     margin-top: 4%;
     /*border-top: 5px solid rgba(41, 66, 144, 1);*/
     /*border-bottom: 5px solid rgba(41, 66, 144, 1);*/
+    color: white;
 }
 
 .topics_div:after {
@@ -174,8 +181,10 @@ body {
     font-weight: 700;
 }
 .topnav a:hover {
-    background-color: rgb(222, 37, 37);
+    /*background-color: rgb(11, 57, 77);*/
+    background-color: transparent;
     color: #fff;
+    border: 1px solid white;
 }
 .topnav .icon {
     display: none;
@@ -239,6 +248,7 @@ body {
     min-height: 60vh;
     margin: 0;
     padding-bottom: 85px;
+    background-color: white;
 }
 .organizator_row {
     margin-bottom: 50px;
@@ -280,7 +290,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-bottom: 85px;
-    background-color: rgb(11, 57, 77);
+    /*background-color: rgb(11, 57, 77);*/
     color: white;
 }
 .get_know_span {
@@ -294,18 +304,8 @@ body {
     margin: 0;
     padding-bottom: 85px;
     /*background-color: rgba(14, 22, 34, 0.1);*/
-    background-color: white;
-}
+    /*background-color: white;*/
 
-
-.program_topics_div:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 13%;
-    width: 120px;
-    height: 6px;
-    background: #333;
 }
 
 .program_photo_div {
@@ -325,8 +325,7 @@ body {
 }
 
 .program_break_div i {
-    color: rgb(11, 57, 77);
-    color: #555;
+    color: white;
 }
 
 .program_break2_div {
@@ -336,7 +335,7 @@ body {
 }
 
 .program_break2_div i {
-    color: rgb(222, 37, 37);
+    color: rgb(197, 231, 227);
     font-size: 33px;
 }
 
@@ -352,7 +351,6 @@ body {
 /*}*/
 .program_title {
     min-height: 80px;
-    color: white;
     /*padding: 1%;*/
     padding-left: 1.5%;
     /*border-left: 3px solid rgb(222, 37, 37);*/
@@ -369,6 +367,14 @@ body {
 
 .name {
     font-style: italic;
+    color: rgb(197, 231, 227);
+}
+
+.speech_title {
+    margin: 0;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .program_title p {
@@ -378,7 +384,7 @@ body {
 .lecture_opis {
     font-size: medium;
     line-height: 1.5;
-    font-style: oblique;
+    color: white;
 }
 
 .program_hour {
@@ -388,7 +394,7 @@ body {
     font-size: 18px;
     vertical-align: middle;
     font-weight: bold;
-    color: rgb(11, 57, 77);
+    color: white;
 }
 
 .break_hour {
@@ -399,7 +405,7 @@ body {
     vertical-align: middle;
     font-weight: bold;
     /*color: rgba(64, 64, 65, 1);*/
-    color: rgb(222, 37, 37);
+    color: rgb(197, 231, 227);
 }
 
 /*.program_hour p {*/
@@ -413,7 +419,7 @@ body {
     /*text-align: center;*/
     font-size: 18px;
     font-weight: bold;
-    color: rgb(222, 37, 37);
+    color: rgb(197, 231, 227);
     text-transform: uppercase;
 }
 
