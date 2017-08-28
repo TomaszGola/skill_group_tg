@@ -80,6 +80,116 @@ $(document).ready(function () {
   }
 });
 
+$(document).ready(function () {
+    $('#2_person').hide();
+    $('#3_person').hide();
+    $('#4_person').hide();
+    $('#5_person').hide();
+    $('#6_person').hide();
+    $('#7_person').hide();
+    $('#8_person').hide();
+    $('#9_person').hide();
+    $('#10_person').hide();
+});
+
+function pokazFormsy () {
+    var liczba = $('#osoby_form').val();
+    console.log(liczba);
+
+    if (liczba == 2) {
+        $('#2_person').show();
+        $('#3_person').hide();
+        $('#4_person').hide();
+        $('#5_person').hide();
+        $('#6_person').hide();
+        $('#7_person').hide();
+        $('#8_person').hide();
+        $('#9_person').hide();
+        $('#10_person').hide();
+    } else if (liczba == 3) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').hide();
+        $('#5_person').hide();
+        $('#6_person').hide();
+        $('#7_person').hide();
+        $('#8_person').hide();
+        $('#9_person').hide();
+        $('#10_person').hide();
+    } else if (liczba == 4) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').show();
+        $('#5_person').hide();
+        $('#6_person').hide();
+        $('#7_person').hide();
+        $('#8_person').hide();
+        $('#9_person').hide();
+        $('#10_person').hide();
+    } else if (liczba == 5) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').show();
+        $('#5_person').show();
+        $('#6_person').hide();
+        $('#7_person').hide();
+        $('#8_person').hide();
+        $('#9_person').hide();
+        $('#10_person').hide();
+    } else if (liczba == 6) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').show();
+        $('#5_person').show();
+        $('#6_person').show();
+        $('#7_person').hide();
+        $('#8_person').hide();
+        $('#9_person').hide();
+        $('#10_person').hide();
+    } else if (liczba == 7) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').show();
+        $('#5_person').show();
+        $('#6_person').show();
+        $('#7_person').show();
+        $('#8_person').hide();
+        $('#9_person').hide();
+        $('#10_person').hide();
+    } else if (liczba == 8) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').show();
+        $('#5_person').show();
+        $('#6_person').show();
+        $('#7_person').show();
+        $('#8_person').show();
+        $('#9_person').hide();
+        $('#10_person').hide();
+    } else if (liczba == 9) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').show();
+        $('#5_person').show();
+        $('#6_person').show();
+        $('#7_person').show();
+        $('#8_person').show();
+        $('#9_person').show();
+        $('#10_person').hide();
+    } else if (liczba == 10) {
+        $('#2_person').show();
+        $('#3_person').show();
+        $('#4_person').show();
+        $('#5_person').show();
+        $('#6_person').show();
+        $('#7_person').show();
+        $('#8_person').show();
+        $('#9_person').show();
+        $('#10_person').show();
+    }
+
+}
+
 
 function showSpoiler(obj) {
     var inner = obj.parentNode.getElementsByClassName("inner")[0];
